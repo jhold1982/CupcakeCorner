@@ -7,14 +7,10 @@
 
 import SwiftUI
 
-
-
 struct ContentView: View {
-    
     @StateObject var order = SharedOrder()
-    
     var body: some View {
-        NavigationView {
+        NavigationStack {
             Form {
                 Section {
                     Picker("Select your cake type:", selection: $order.type) {
@@ -26,7 +22,6 @@ struct ContentView: View {
                 }
                 Section {
                     Toggle("Special Requests", isOn: $order.specialRequestEnabled.animation())
-                    
                     if order.specialRequestEnabled {
                         Toggle("Add extra frosting", isOn: $order.extraFrosting)
                         Toggle("Add extra sprinkles", isOn: $order.addSprinkles)

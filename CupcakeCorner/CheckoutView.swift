@@ -8,15 +8,11 @@
 import SwiftUI
 
 struct CheckoutView: View {
-    
     @ObservedObject var order: SharedOrder
-    
     @State private var confirmationMessage = ""
     @State private var showingConfirmation = false
-    
     @State private var errorMessage = ""
     @State private var showingError = false
-    
     var body: some View {
         ScrollView {
             VStack {
@@ -29,10 +25,8 @@ struct CheckoutView: View {
                 }
                 .frame(height: 233)
                 .accessibilityHidden(true)
-                
                 Text("Your total is \(order.cost, format: .currency(code: "USD"))")
                     .font(.title)
-                
                 Button("Place Order") {
                     Task {
                         await placeOrder()

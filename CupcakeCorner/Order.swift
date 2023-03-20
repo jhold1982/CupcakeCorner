@@ -5,8 +5,10 @@
 //  Created by Justin Hold on 10/5/22.
 //
 
+import Foundation
 import SwiftUI
 @dynamicMemberLookup
+
 class SharedOrder: ObservableObject {
     static let types = ["Vanilla", "Strawberry", "Chocolate", "Rainbow"]
     @Published var data = Order()
@@ -22,6 +24,7 @@ class SharedOrder: ObservableObject {
         }
     }
 }
+
 struct Order: Codable {
     enum CodingKeys: CodingKey {
         case type, quantity, extraFrosting, addSprinkles, name, streetAddress, city, state, zipCode

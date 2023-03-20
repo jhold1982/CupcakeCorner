@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct AddressView: View {
-    
     @ObservedObject var order: SharedOrder
-    
     var body: some View {
         Form {
             Section {
