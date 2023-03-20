@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		642AB39D28F0B31A001EF316 /* String-EmptyChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642AB39C28F0B31A001EF316 /* String-EmptyChecking.swift */; };
 		64FD956528E7D80400C374AA /* CupcakeCornerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD956428E7D80400C374AA /* CupcakeCornerApp.swift */; };
 		64FD956728E7D80400C374AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD956628E7D80400C374AA /* ContentView.swift */; };
 		64FD956928E7D80500C374AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64FD956828E7D80500C374AA /* Assets.xcassets */; };
 		64FD956C28E7D80500C374AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64FD956B28E7D80500C374AA /* Preview Assets.xcassets */; };
+		64FD957328EDF40D00C374AA /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD957228EDF40D00C374AA /* Order.swift */; };
+		64FD957728EDFA0E00C374AA /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD957628EDFA0E00C374AA /* CheckoutView.swift */; };
+		64FD957928EDFB2500C374AA /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD957828EDFB2500C374AA /* AddressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		642AB39C28F0B31A001EF316 /* String-EmptyChecking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-EmptyChecking.swift"; sourceTree = "<group>"; };
 		64FD956128E7D80400C374AA /* CupcakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupcakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64FD956428E7D80400C374AA /* CupcakeCornerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCornerApp.swift; sourceTree = "<group>"; };
 		64FD956628E7D80400C374AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		64FD956828E7D80500C374AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64FD956B28E7D80500C374AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		64FD957228EDF40D00C374AA /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		64FD957628EDFA0E00C374AA /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		64FD957828EDFB2500C374AA /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,7 @@
 		64FD955828E7D80400C374AA = {
 			isa = PBXGroup;
 			children = (
+				642AB39C28F0B31A001EF316 /* String-EmptyChecking.swift */,
 				64FD956328E7D80400C374AA /* CupcakeCorner */,
 				64FD956228E7D80400C374AA /* Products */,
 			);
@@ -53,6 +62,9 @@
 			children = (
 				64FD956428E7D80400C374AA /* CupcakeCornerApp.swift */,
 				64FD956628E7D80400C374AA /* ContentView.swift */,
+				64FD957828EDFB2500C374AA /* AddressView.swift */,
+				64FD957628EDFA0E00C374AA /* CheckoutView.swift */,
+				64FD957228EDF40D00C374AA /* Order.swift */,
 				64FD956828E7D80500C374AA /* Assets.xcassets */,
 				64FD956A28E7D80500C374AA /* Preview Content */,
 			);
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64FD957328EDF40D00C374AA /* Order.swift in Sources */,
+				64FD957728EDFA0E00C374AA /* CheckoutView.swift in Sources */,
 				64FD956728E7D80400C374AA /* ContentView.swift in Sources */,
 				64FD956528E7D80400C374AA /* CupcakeCornerApp.swift in Sources */,
+				642AB39D28F0B31A001EF316 /* String-EmptyChecking.swift in Sources */,
+				64FD957928EDFB2500C374AA /* AddressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

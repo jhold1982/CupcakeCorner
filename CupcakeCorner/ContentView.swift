@@ -7,15 +7,41 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
+    
+    @StateObject var order = SharedOrder()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            Form {
+                Section {
+                    Picker("Select your cake type:", selection: $order.type) {
+                        ForEach(SharedOrder.types.indices) {
+                            Text(SharedOrder.types[$0])
+                        }
+                    }
+                    Stepper("Number of cupcakes: \(order.quantity)", value: $order.quantity, in: 3...20)
+                }
+                Section {
+                    Toggle("Special Requests", isOn: $order.specialRequestEnabled.animation())
+                    
+                    if order.specialRequestEnabled {
+                        Toggle("Add extra frosting", isOn: $order.extraFrosting)
+                        Toggle("Add extra sprinkles", isOn: $order.addSprinkles)
+                    }
+                }
+                Section {
+                    NavigationLink {
+                        AddressView(order: order)
+                    } label: {
+                        Text("Delivery Details")
+                    }
+                }
+            }
+            .navigationTitle("Cupcake Corner")
         }
-        .padding()
     }
 }
 
